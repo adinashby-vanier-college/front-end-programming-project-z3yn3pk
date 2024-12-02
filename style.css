@@ -14,10 +14,19 @@ html {
 .main{
     background: #fbcade;
     color: #fff;
+    overflow: hidden;
 }
+
+.main-left{
+    position: absolute;
+    z-index: inherit;
+
+}
+
 
 .sparkle{
     width: 350px;
+    overflow: hidden;
 }
 
 .button {
@@ -46,13 +55,17 @@ html {
 }
 
 nav{
-    top: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding-bottom: 150px;
+    padding-top: 30px;
 }
 
 .name {
     text-align: center;
-    font-size: 100px;
+    font-size: 150px;
     margin: 0;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black;
 }
@@ -62,8 +75,17 @@ nav{
     margin-bottom: 20px;
 }
 
+.social-icons svg:hover{
+    color: #000000;
+}
+
+.button5{
+    display: block;
+    margin: 0 auto;
+}
+
 .sparkle2{
-    margin-right: -100px;
+    margin-left: 80%;
     margin-bottom: -150px;
 }
 
@@ -71,11 +93,13 @@ nav{
 .about{
     background: #202020;
     color: #fff;
+    overflow: hidden;
 }
 
 .title{
-    padding: 20px;
+    padding: 30px;
     padding-top: 50px;
+    font-size: 60px;
 }
 
 .title span{
@@ -84,20 +108,25 @@ nav{
 }
 
 .about p{
-    padding-left: 20px;
+    padding-left: 30px;
+    font-size: larger;
+    font-size: 28px;
+}
+.about-left{
+    display: inline-block;
 }
 
 .cloud{
     align-items: right;
-    width: 300px;
-    margin-right: -800px;
+    width: 600px;
 }
 
 /* --------------my work page-------------- */
 .work{
     background: #fbcade;
     color: #fff;
-    padding: 30px 0;
+    padding: 50px 0;
+    padding-bottom: 80px;
 }
 
 .work-list img{
@@ -139,15 +168,56 @@ nav{
 .blog{
     background: #202020;
     color: #fff;
+    overflow: hidden;
+}
+
+.sparkle1-2{
+    margin-left: -100px;
+    margin-top: -100px;
 }
 
 .blog-photo{
-    width: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-left:25%;
 }
+
+.sparkle2-2{
+    margin-left: 80%;
+    margin-bottom: -100px;
+}
+
 
 /* --------------contact page-------------- */
 
 .contact{
     background: #fbcade;
     color: #fff;
+}
+
+.contact-title{
+    font-size: 90px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.contact-title span{
+    color: #fbcade;
+    text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white;
+}
+
+.social-icons-p2 svg:hover{
+    color: #000000;
+}
+
+.my-info{
+    font-size: 20px;
+    margin-left: 65%;
+    padding-bottom: 50px;
+}
+
+.contact p span{
+    font-size: larger;
+    /*they should look different than other text in the page(do with javasript)*/
 }
